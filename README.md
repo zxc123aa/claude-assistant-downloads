@@ -22,12 +22,7 @@ Windows 下载后直接双击运行。Linux 请选择其中一种格式：AppIma
 
 [Claude 使用指南](https://www.yuque.com/yushigejue-uwo3g/nx5aap/ob2rp1yd373s9unm?singleDoc#)
 
-Linux 保留测试版标识。已验证的隔离环境、最小化监测和通知范围见 [Linux 发布说明](https://github.com/zxc123aa/claude-assistant-downloads/releases/tag/v1.3.27-beta.1-linux)；原生 GNOME/KDE 未实测，未标记为通过。
+Linux 当前为测试版，系统要求与使用说明见 [Linux 发布页](https://github.com/zxc123aa/claude-assistant-downloads/releases/tag/v1.3.27-beta.1-linux)。
 
 只需下载客户端附件。GitHub 自动生成的“Source code”压缩包仅包含下载仓库的公开说明，不是客户端或产品源码。文件校验值见对应发布页的 `SHA256SUMS.txt`。
 
-## 验证记录
-
-[Windows 发布说明](https://github.com/zxc123aa/claude-assistant-downloads/releases/tag/v1.3.27-windows) · [Linux 授权与密钥环实测](LINUX_LICENSE_VALIDATION.md) · [Linux 清理、最小化监测与通知实测](LINUX_CLEANUP_IP_VALIDATION.md)
-
-此仓库仅分发客户端和公开文档，产品源码在独立私人仓库维护。
