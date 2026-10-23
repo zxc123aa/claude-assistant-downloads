@@ -8,8 +8,8 @@
 
 | 平台 | 版本与状态 |
 | --- | --- |
-| Windows x64 | 1.3.27 单文件便携版 |
-| Linux x64 | 1.3.27-beta.1，构建与检查通过后提供测试包 |
+| Windows x64 | [1.3.27 单文件便携版](https://github.com/zxc123aa/claude-assistant-downloads/releases/tag/v1.3.27-windows) |
+| Linux x64 | [1.3.27-beta.1 测试版](https://github.com/zxc123aa/claude-assistant-downloads/releases/tag/v1.3.27-beta.1-linux)，AppImage / tar.gz |
 | macOS 苹果芯片 | 等待合作者交付新版安装包 |
 | macOS Intel | 等待合作者交付新版安装包 |
 
