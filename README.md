@@ -15,6 +15,8 @@
 
 各平台的实测范围、系统要求及待验证项目以对应 Release 说明为准。没有附件的平台表示暂未提供下载。
 
+Linux 1.3.27 已补充旧版授权升级、续期、应用及密钥环会话重启、锁定与解锁恢复的实际验收：21 项通过，覆盖 tar.gz 与 AppImage extract-and-run。详见 [Linux 授权与密钥环实测](LINUX_LICENSE_VALIDATION.md)；KWallet、完整系统重启及其他待验收项目仍单独标注。
+
 ## 使用
 
 Windows 下载 EXE 后直接运行。Linux 下载 AppImage 或 tar.gz；AppImage 需要执行权限，tar.gz 解压后运行 `claude-assistant`，无需安装 Node.js。
