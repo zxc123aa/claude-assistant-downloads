@@ -1,32 +1,33 @@
-# Claude 防封助手 · 下载
+# Claude 防封助手 · 客户下载
 
-2026-10-23 追加两名独立子 Agent 成品实测：tar.gz 与 AppImage 均完成默认清理、清理后重启保留旧限时授权，以及最小化后的跳 IP、断网、恢复和实际可见通知。清理使用隔离用户与 WSLg；监测使用独立 Xvfb/Openbox/dunst 会话。跳 IP 采用专用历史基线到真实 HTTPS 观测的模拟，未切换真实 VPN。详见 [Linux 清理与 IP 实测](LINUX_CLEANUP_IP_VALIDATION.md)。备份恢复、真实浏览器集成、KWallet、完整系统重启及其他桌面仍待验收。
+| 平台 | 下载 | 状态 |
+| --- | --- | --- |
+| Windows x64 | [单文件 EXE](https://github.com/zxc123aa/claude-assistant-downloads/releases/download/v1.3.27-windows/ClaudeAssistant-Windows-x64-1.3.27.exe) | 1.3.27 离线授权版 |
+| Linux x64 | [AppImage](https://github.com/zxc123aa/claude-assistant-downloads/releases/download/v1.3.27-beta.1-linux/ClaudeAssistant-Linux-x86_64-1.3.27-beta.1.AppImage) · [tar.gz](https://github.com/zxc123aa/claude-assistant-downloads/releases/download/v1.3.27-beta.1-linux/ClaudeAssistant-Linux-x64-1.3.27-beta.1.tar.gz) | 1.3.27-beta.1 测试版 |
+| macOS 苹果芯片 / Intel | 暂未提供 | 等待新版安装包 |
 
-此仓库用于分发客户端安装包和使用说明。产品源码在独立的私人仓库维护，此处不包含发码后台、签发私钥、客户数据库或客户激活码。
+Windows 下载后直接双击运行。Linux 请选择其中一种格式：AppImage 赋予执行权限后运行，tar.gz 解压后运行 `claude-assistant`。详细要求见对应发布页附件中的使用说明。
 
-## 下载与版本状态
+## 激活与续期
 
-请在 [Releases 下载页](https://github.com/zxc123aa/claude-assistant-downloads/releases) 下载附件中的客户端文件。GitHub 自动生成的 “Source code” 压缩包只包含本下载仓库的公开说明，不是产品源码，也不是安装包。
+1. 打开软件，复制机器码，发给销售。
+2. 领取绑定本机的激活码，粘贴后点击“激活并进入”。
+3. 已激活的原机升级可继续读取有效旧授权；续期在“设置 → 更新激活码 / 续期”填写新码。
 
-| 平台 | 版本与状态 |
-| --- | --- |
-| Windows x64 | [1.3.27 单文件便携版](https://github.com/zxc123aa/claude-assistant-downloads/releases/tag/v1.3.27-windows) |
-| Linux x64 | [1.3.27-beta.1 测试版](https://github.com/zxc123aa/claude-assistant-downloads/releases/tag/v1.3.27-beta.1-linux)，AppImage / tar.gz |
-| macOS 苹果芯片 | 等待合作者交付新版安装包 |
-| macOS Intel | 等待合作者交付新版安装包 |
-
-各平台的实测范围、系统要求及待验证项目以对应 Release 说明为准。没有附件的平台表示暂未提供下载。
-
-Linux 1.3.27 已补充旧版授权升级、续期、应用及密钥环会话重启、锁定与解锁恢复的实际验收：21 项通过，覆盖 tar.gz 与 AppImage extract-and-run。详见 [Linux 授权与密钥环实测](LINUX_LICENSE_VALIDATION.md)；KWallet、完整系统重启及其他待验收项目仍单独标注。
+激活采用离线机器绑定，不要求连接授权服务器。换电脑、换系统或更换系统用户，请联系销售处理。保持系统时间准确；Linux 限时授权需要可正常解锁的系统密钥环。
 
 ## 使用
 
-Windows 下载 EXE 后直接运行。Linux 下载 AppImage 或 tar.gz；AppImage 需要执行权限，tar.gz 解压后运行 `claude-assistant`，无需安装 Node.js。
+清理前请保存工作并关闭相关浏览器，核对界面的清理范围。IP 监测需保持软件运行，最小化后继续，完全退出后停止。允许系统通知，并检查勿扰设置；使用 TUN 规则模式时，让助手和浏览器的出站规则一致。IP 监测用于环境排查，不能保证账号不被封禁。
 
-启动后复制机器码，联系销售领取绑定本机的激活码。有效旧码在原电脑、原系统用户下继续使用；机器绑定仍生效，换电脑或换系统需要重新处理授权。
+[Claude 使用指南](https://www.yuque.com/yushigejue-uwo3g/nx5aap/ob2rp1yd373s9unm?singleDoc#)
 
-IP 监测需要保持程序运行，最小化后继续工作，完全退出后停止。请允许系统通知，并检查勿扰设置；TUN 规则模式下，本助手与浏览器的出站规则应一致。IP 监测不能证明封号原因，也不能保证账号不被封禁。
+Linux 保留测试版标识。已验证的隔离环境、最小化监测和通知范围见 [Linux 发布说明](https://github.com/zxc123aa/claude-assistant-downloads/releases/tag/v1.3.27-beta.1-linux)；原生 GNOME/KDE 未实测，未标记为通过。
 
-使用指南：[Claude 指南](https://www.yuque.com/yushigejue-uwo3g/nx5aap/ob2rp1yd373s9unm?singleDoc#)。
+只需下载客户端附件。GitHub 自动生成的“Source code”压缩包仅包含下载仓库的公开说明，不是客户端或产品源码。文件校验值见对应发布页的 `SHA256SUMS.txt`。
 
-下载后可用 Release 附件中的 `SHA256SUMS.txt` 核对文件完整性。
+## 验证记录
+
+[Windows 发布说明](https://github.com/zxc123aa/claude-assistant-downloads/releases/tag/v1.3.27-windows) · [Linux 授权与密钥环实测](LINUX_LICENSE_VALIDATION.md) · [Linux 清理、最小化监测与通知实测](LINUX_CLEANUP_IP_VALIDATION.md)
+
+此仓库仅分发客户端和公开文档，产品源码在独立私人仓库维护。
