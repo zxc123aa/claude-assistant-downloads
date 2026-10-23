@@ -25,4 +25,3 @@ Windows 下载后直接双击运行。Linux 请选择其中一种格式：AppIma
 Linux 当前为测试版，系统要求与使用说明见 [Linux 发布页](https://github.com/zxc123aa/claude-assistant-downloads/releases/tag/v1.3.27-beta.1-linux)。
 
 只需下载客户端附件。GitHub 自动生成的“Source code”压缩包仅包含下载仓库的公开说明，不是客户端或产品源码。文件校验值见对应发布页的 `SHA256SUMS.txt`。
-
