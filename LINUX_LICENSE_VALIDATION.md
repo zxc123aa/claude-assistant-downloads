@@ -29,7 +29,7 @@
 
 ## 仍待验收
 
-KWallet、其他发行版、完整原生 GNOME/KDE 登录和系统重启、真实浏览器清理与恢复、最小化后的跳 IP/断网系统通知、长时间监测、polkit 权限、FUSE 挂载及完整 Wayland 桌面。本报告不将这些项目标为通过。
+后续已完成隔离成品清理、最小化监测与实际通知实测，见 [清理与 IP 验收](LINUX_CLEANUP_IP_VALIDATION.md)。仍待验收 KWallet、其他发行版、完整原生 GNOME/KDE 登录和系统重启、真实浏览器集成与备份恢复、其他桌面通知、长期监测、实际 VPN 切换、polkit、FUSE 挂载及完整 Wayland。
 
 ## 下载与证据
 
